@@ -46,11 +46,11 @@ class WeatherSystem extends Component {
 
         return ( 
             <div className="weather">
-                <form onSubmit={this.handleSubmit}>
-                <input onChange={this.handleChange} type="text" name="city" value={this.state.city}/>
+                <form onSubmit={this.handleSubmit} className="form">
+                <input onChange={this.handleChange} type="text" name="city" value={this.state.city} className="input is-rounded"/>
                 </form>
                 <div>
-                    <h2>{this.state.city}</h2>
+                    <h2 className="title is-2">{this.state.city}</h2>
                 {periodsList}
                 </div>
             </div>
