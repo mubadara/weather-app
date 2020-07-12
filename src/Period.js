@@ -11,7 +11,7 @@ class Period extends Component {
         <div className="period card">
           {period.dt_txt} 
           <span><img src={iconURL} className="period__img" alt=""/></span>
-           {period.main.temp}
+           {period.main.temp}°
         </div>
         );
     }
